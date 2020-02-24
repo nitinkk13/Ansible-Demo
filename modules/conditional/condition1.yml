@@ -1,0 +1,9 @@
+---
+ - name: "Playbook for when condition."
+   hosts: all
+   vars:
+     age: 17
+   tasks:
+     - name: "Task for when condition."
+       command: touch /tmp/18.txt
+       when: age == 18

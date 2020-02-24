@@ -1,0 +1,23 @@
+ - 
+   name: "This is my first playbook."
+   hosts: web_db_server
+   tasks:
+     -
+      name: "deleting a dummy dir."
+      command: rm -rf /tmp/dummy_dir_01
+     -
+      name: "Create a dummy dir."
+      command: mkdir /tmp/dummy_dir_01
+     -
+      name: "Create dummy file inside dummy dir."
+      command: touch /tmp/dummy_dir_01/dummy_file_01.txt
+     -
+      name: "Create dummy file inside dummy dir."
+      command: touch /tmp/dummy_dir/dummy_file_02.txt
+     -
+      name: "Chnage permission of file."
+      shell: chmod 755 /tmp/dummy_dir/*
+     -
+      name: "Change permission of file."
+      command: chmod 755 /tmp/dummy_dir_01/dummy_file_01.txt 
+

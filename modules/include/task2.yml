@@ -1,0 +1,17 @@
+---
+     - name: "Task8"
+       command: touch /tmp/task1/{{ var8 }}.txt
+     - name: "Task9"
+       command: touch /tmp/task1/{{ var9 }}.txt
+     - name: "Task10"
+       command: touch /tmp/task1/{{ var10 }}.txt
+     - name: "Task11"
+       command: touch /tmp/task1/{{ var11 }}.txt
+     - name: "Task12"
+       command: touch /tmp/task1/{{ var12 }}.txt
+     - name: "Task13"
+       command: touch /tmp/task1/{{ var13 }}.txt
+     - name: "Task14"
+       command: touch /tmp/task1/{{ var14 }}.txt
+     - name: "Task15"
+       command: touch /tmp/task1/{{ var15 }}.txt

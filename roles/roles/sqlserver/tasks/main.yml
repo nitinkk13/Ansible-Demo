@@ -1,0 +1,5 @@
+---
+ - name: "Task1 for sqlserver."
+   command: touch /tmp/sql_task1.txt
+ - name: "Task2 for sqlserver."
+   command: touch /tmp/sql_task2.txt

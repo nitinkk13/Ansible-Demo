@@ -1,0 +1,5 @@
+---
+ - name: "Task1 for webserver."
+   command: touch /tmp/web_task1.txt
+ - name: "Task2 for webserver."
+   command: touch /tmp/web_task2.txt

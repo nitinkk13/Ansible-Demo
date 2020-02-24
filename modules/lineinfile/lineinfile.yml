@@ -1,0 +1,6 @@
+---
+ - name: "Playbook for lineinfile module."
+   hosts: all
+   tasks:
+     - name: "Task to one line into test file"
+       lineinfile: path=/tmp/test.txt line="Nitin Kumar"`

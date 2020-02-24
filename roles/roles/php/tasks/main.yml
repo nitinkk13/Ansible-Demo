@@ -1,0 +1,5 @@
+---
+ - name: "Task1 for php webserver."
+   command: touch /tmp/php_task1.txt
+ - name: "Task2 for php webserver."
+   command: touch /tmp/php_task2.txt

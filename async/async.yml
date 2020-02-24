@@ -1,0 +1,10 @@
+---
+ - name: "Playbook to sleep for 60s"
+   hosts: all
+   tasks:
+     - name: "First task to sleep for 60s"
+       command: sleep 60
+       async: 70
+       poll: 30
+     - name: "Seconf Task"
+       command: touch /tmp/poll_task.txt

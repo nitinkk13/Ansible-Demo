@@ -1,0 +1,6 @@
+---
+ - name: "Playbook to create user using user module."
+   hosts: all
+   tasks:
+     - name: "Task to create user."
+       user: name="mytestuser" state=absent remove=yes 

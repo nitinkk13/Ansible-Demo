@@ -1,0 +1,8 @@
+---
+ - name: "Playbook for service stop/start using variables."
+   hosts: all
+   vars:
+     servicename: cups
+   tasks:
+     - name: "Task to stop/start service using variable."
+       service: name={{ servicename }} state=started

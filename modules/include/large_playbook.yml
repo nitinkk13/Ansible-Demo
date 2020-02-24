@@ -1,0 +1,51 @@
+---
+ - name: "Large Playbook"
+   hosts: all
+   vars:
+     var1: var1
+     var2: var2
+     var3: var3
+     var4: var4
+     var5: var5
+     var6: var6
+     var7: var7
+     var8: var8
+     var9: var9
+     var10: var10
+     var11: var11
+     var12: var12
+     var13: var13
+     var14: var14
+     var15: var15
+   tasks:
+     - name: "Task1"
+       command: touch /tmp/large/{{ var1 }}.txt
+     - name: "Task2"
+       command: touch /tmp/large/{{ var2 }}.txt
+     - name: "Task3"
+       command: touch /tmp/large/{{ var3 }}.txt
+     - name: "Task4"
+       command: touch /tmp/large/{{ var4 }}.txt
+     - name: "Task5"
+       command: touch /tmp/large/{{ var5 }}.txt
+     - name: "Task6"
+       command: touch /tmp/large/{{ var6 }}.txt
+     - name: "Task7"
+       command: touch /tmp/large/{{ var7 }}.txt
+     - name: "Task8"
+       command: touch /tmp/large/{{ var8 }}.txt
+     - name: "Task9"
+       command: touch /tmp/large/{{ var9 }}.txt
+     - name: "Task10"
+       command: touch /tmp/large/{{ var10 }}.txt
+     - name: "Task11"
+       command: touch /tmp/large/{{ var11 }}.txt
+     - name: "Task12"
+       command: touch /tmp/large/{{ var12 }}.txt
+     - name: "Task13"
+       command: touch /tmp/large/{{ var13 }}.txt
+     - name: "Task14"
+       command: touch /tmp/large/{{ var14 }}.txt
+     - name: "Task15"
+       command: touch /tmp/large/{{ var15 }}.txt
+

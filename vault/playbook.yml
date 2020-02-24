@@ -1,0 +1,6 @@
+---
+ - name: "Playbook to run from encrypted inventory."
+   hosts: all
+   tasks:
+     - name: "Task to create file using encrypted inventory."
+       command: touch /tmp/vault_inv.txt

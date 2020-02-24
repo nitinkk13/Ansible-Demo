@@ -1,0 +1,24 @@
+---
+ - name: "This is our 1st Playbook."
+   hosts: webserver
+   tasks:
+     - name: "Task1"
+       command: touch /tmp/php_play1_task1.txt
+     - name: "Task2"
+       command: touch /tmp/php_play1_task2.txt
+
+ - name: "This is our 2nd Playbook."
+   hosts: webserver
+   tasks:
+     - name: "Task1"
+       command: touch /tmp/web_play2_task1.txt
+     - name: "Task2"
+       command: touch /tmp/web_play2_task2.txt
+
+ - name: "This is our 3rd Playbook."
+   hosts: lbserver
+   tasks:
+     - name: "Task1"
+       command: touch /tmp/sql_play3_task1.txt
+     - name: "Task2"
+       command: touch /tmp/sql_play3_task2.txt

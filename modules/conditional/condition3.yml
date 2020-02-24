@@ -1,0 +1,15 @@
+---
+ - name: "Playbook for contional operator ==, > & <"
+   hosts: all
+   vars:
+     age: 15
+   tasks:
+     - name: "Task1 for operator =="
+       command: touch /tmp/18.txt
+       when: age == 18
+     - name: "Task2 for operator >"
+       command: touch /tmp/greater_than_18.txt
+       when: age > 18
+     - name: "Task3 for operator"
+       command: touch /tmp/less_than_10
+       when: age < 10

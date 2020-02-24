@@ -1,0 +1,37 @@
+---
+ - name: "Large Playbook"
+   hosts: all
+   vars_files:
+      - variable.yml
+   tasks:
+     - name: "Task1"
+       command: touch /tmp/variable/{{ var1 }}.txt
+     - name: "Task2"
+       command: touch /tmp/variable/{{ var2 }}.txt
+     - name: "Task3"
+       command: touch /tmp/variable/{{ var3 }}.txt
+     - name: "Task4"
+       command: touch /tmp/variable/{{ var4 }}.txt
+     - name: "Task5"
+       command: touch /tmp/variable/{{ var5 }}.txt
+     - name: "Task6"
+       command: touch /tmp/variable/{{ var6 }}.txt
+     - name: "Task7"
+       command: touch /tmp/variable/{{ var7 }}.txt
+     - name: "Task8"
+       command: touch /tmp/variable/{{ var8 }}.txt
+     - name: "Task9"
+       command: touch /tmp/variable/{{ var9 }}.txt
+     - name: "Task10"
+       command: touch /tmp/variable/{{ var10 }}.txt
+     - name: "Task11"
+       command: touch /tmp/variable/{{ var11 }}.txt
+     - name: "Task12"
+       command: touch /tmp/variable/{{ var12 }}.txt
+     - name: "Task13"
+       command: touch /tmp/variable/{{ var13 }}.txt
+     - name: "Task14"
+       command: touch /tmp/variable/{{ var14 }}.txt
+     - name: "Task15"
+       command: touch /tmp/variable/{{ var15 }}.txt
+

@@ -1,0 +1,12 @@
+---
+ - name: "Playbook for when condition in two tasks."
+   hosts: all
+   vars:
+     age: 13
+   tasks:
+     - name: "Task1  for constion '=='"
+       command: touch /tmp/18.txt
+       when: age == 18
+     - name: "Task2 for condition '>'"
+       command: touch /tmp/greater_than_18.txt
+       when: age > 18

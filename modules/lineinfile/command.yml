@@ -1,0 +1,6 @@
+---
+ - name: My playbook to append an line into file.
+   hosts: all
+   tasks:
+     - name: Task to add an line into a file.
+       shell: echo "8.8.8.8" | tee -a /tmp/resolv.conf

@@ -1,0 +1,9 @@
+---
+ - name: "Plabook for service module."
+   hosts: all
+   tasks:
+     - name: "Task to stop/start services."
+       service:
+         name: cups
+         state: started #stopped
+       

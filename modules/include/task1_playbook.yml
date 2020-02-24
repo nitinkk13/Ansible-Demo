@@ -1,0 +1,8 @@
+---
+ - name: "Playbook to for varibale and include tasks."
+   hosts: all
+   vars_files:
+     - variable.yml
+   tasks:
+#     - include: task1.yml
+     - include: task2.yml

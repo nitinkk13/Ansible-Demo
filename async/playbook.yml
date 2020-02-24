@@ -1,0 +1,8 @@
+---
+ - name: "Playbook for sleep 120 sec."
+   hosts: all
+   tasks:
+     - name: "First Task for sleep 120s"
+       command: sleep 120
+     - name: "Second Task"
+       command: touch /tmp/second_task.txt

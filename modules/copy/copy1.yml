@@ -1,0 +1,6 @@
+---
+ - name: "Copy file with custom owner, group and permission"
+   hosts: all
+   tasks:
+     -  name: "Copying file with custom user, owner and perm."
+        copy: src=test.yml dest=/tmp/test1.yml owner=nitinkk group=nitinkk mode=0744

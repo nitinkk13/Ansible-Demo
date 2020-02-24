@@ -1,0 +1,6 @@
+---
+ - name: "Playbook to copy file from controller to target"
+   hosts: webserver
+   tasks:
+     -  name: "Copying file"
+        copy: src=test.yml dest=/tmp/test.yml

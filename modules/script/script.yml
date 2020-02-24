@@ -1,0 +1,6 @@
+---
+ - name: "Playbook to execute script module."
+   hosts: all
+   tasks:
+     - name: "Task to execute test script on target machine."
+       script: testscript.sh 'Nitin Kumar'

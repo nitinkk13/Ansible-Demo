@@ -1,0 +1,12 @@
+DB01 ansible_host=10.178.122.149 ansible_connecton=ssh ansible_port=22
+App01 ansible_host=10.178.122.180 ansible_connecton=ssh ansible_port=22
+
+[webserver]
+App01
+
+[dbserver]
+DB01
+
+[web_db_server]
+App01
+DB01

@@ -1,0 +1,12 @@
+---
+ - name: "Playbook to create users using loop."
+   hosts: all
+   tasks:
+     - name: "Task to create multiple uusers using loops."
+       user: name={{ item }} state=absent remove=yes
+       with_items:
+         - user1
+         - user2
+         - user3
+         - user4
+         - user5 

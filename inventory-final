@@ -1,0 +1,12 @@
+LB01 ansible_host=192.168.1.6 ansible_connecton=ssh ansible_port=22
+App01 ansible_host=192.168.1.4 ansible_connecton=ssh ansible_port=22
+
+[webserver]
+App01
+
+[lbserver]
+LB01
+
+[web_lb_server]
+App01
+LB01
