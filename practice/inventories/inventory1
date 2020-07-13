@@ -1,0 +1,37 @@
+app01 ansible_host=192.168.225.206 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+app02 ansible_host=192.168.225.153 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+app03 ansible_host=192.168.225.207 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+app04 ansible_host=192.168.225.154 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+
+db01 ansible_host=192.168.225.206 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+db02 ansible_host=192.168.225.153 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+db03 ansible_host=192.168.225.207 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+db04 ansible_host=192.168.225.154 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+
+nfs01 ansible_host=192.168.225.206 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+nfs02 ansible_host=192.168.225.153 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+nfs03 ansible_host=192.168.225.207 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+nfs04 ansible_host=192.168.225.154 ansible_ssh_pass=N!t!n13@01 ansible_connection=ssh ansible_port=22 ansible_user=nitinkk
+
+[app]
+app01
+app02
+app03
+app04
+
+
+[db]
+db01
+db02
+db03
+db04
+
+
+[nfs]
+nfs[01:03]
+
+
+[app_db:children]
+app
+db
+

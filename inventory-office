@@ -1,12 +1,12 @@
-DB01 ansible_host=10.178.122.149 ansible_connecton=ssh ansible_port=22
-App01 ansible_host=10.178.122.180 ansible_connecton=ssh ansible_port=22
+App01 ansible_host=10.178.121.155 ansible_connecton=ssh ansible_port=22
+App02 ansible_host=10.178.121.9 ansible_connecton=ssh ansible_port=22
 
-[webserver]
+[webserver01]
 App01
 
-[dbserver]
-DB01
+[webserver02]
+App02
 
-[web_db_server]
+[web_servers]
 App01
-DB01
+App02

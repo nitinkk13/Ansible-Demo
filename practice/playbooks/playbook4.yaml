@@ -1,0 +1,8 @@
+---
+ - name: "This is my fourth playbook with two taks."
+   hosts: web
+   tasks:
+     - name: "This task is to create dummy dir under /tmp."
+       command: mkdir /tmp/ansible_dummy_dir
+     - name: "This task is to create dummy file under /tmp dir."
+       command: touch /tmp/ansible_dummy_dir/dummy_file.txt

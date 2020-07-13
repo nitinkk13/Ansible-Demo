@@ -1,0 +1,7 @@
+---
+ - name: This is my seond playbook.
+   hosts: web_db
+   tasks:
+     - 
+       name: 'Create a dummy file on web and db server..'
+       command: touch /tmp/ansible_dummy.txt

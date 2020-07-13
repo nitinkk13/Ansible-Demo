@@ -1,0 +1,16 @@
+---
+ - name: "This is firstplay"
+   hosts: web
+   tasks:
+     - name: "Create a sample file."
+       command: touch ansible_dummy_file.txt
+     - name: "Copy /etc/hosts file to /tmp/ dir."
+       command: cp /etc/hosts /tmp/myhosts
+
+ - name: "This is second play."
+   hosts: web_db
+   tasks:
+     - name: "First task of second play."
+       command: mkdir /tmp/secondplay_dummy_dir
+     - name: "Second task of second play."
+       command: touch /tmp/secondplay_dummy_dir/secondplay_dummy_file

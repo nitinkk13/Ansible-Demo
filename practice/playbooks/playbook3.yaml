@@ -1,0 +1,6 @@
+---
+ - name: This is my third playbook to create dummy directory.
+   hosts: web
+   tasks:
+     - name: "This is first task to create dummy directory on webserver."
+       command: mkdir /tmp/ansible_dummy_dir
